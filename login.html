@@ -1,0 +1,132 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Login</title>
+     <link rel="stylesheet" href="project.css">
+    
+     
+ </head>
+ <body  >
+    <div class="logo proj_div3">
+        <img src="logo.png" alt="">
+    </div>
+   
+    <div class="menu1"> 
+        <ul>
+        <li><a href="index.html"class ="btn 1">Home</a></li>   
+        <li><a href="collection.html"class="btn 3">Collection</a></li>
+        <li><a href="login.html"   class="btn 2">Signup</a></li>
+        <li><a href="aboutme.html" class="btn 4">About</a></li>
+        </ul>
+        
+      </div>
+</div>
+
+
+<br>
+<div class="form" >
+    <br>
+        <div class="log_txt" >Signup Here</div>
+        <form id="forme">
+        <div class="form1">
+        
+        <br><br>
+        <input required id="b" type="text" placeholder="username" >
+        <br><br>
+
+        <input required id="b" type="text" placeholder="E-mail id">
+        <br> <br>
+        <input required id="b"  type="password" placeholder="password">
+        <br> <br>
+         <input hidden required type="text" >
+        <button id="c"  type="reset"   class="but" onclick="openpopup()"  >submit</button>
+       </div>
+    </form>
+
+
+</div>
+<br>
+
+<div class="menu">
+<div class="end">
+
+    <!-- <button type="submit" class="but" onclick="openpopup()">submit</button> -->
+    
+
+    <div class="popup" id="popup" > 
+        <img src="grey_tick.jpg " alt="">
+        
+        <h2>Thank You!</h2>
+        <br> &nbsp;
+        <p>Your details have been<br>submitted successfully  Thanks! 
+        </p>
+    
+        <button type="button" onclick="closepopup()" >OK</button>
+        
+       
+
+        <script>  
+
+            let popup = document.getElementById("popup");
+    
+             function openpopup()
+             {
+                 popup.classList.add("open-popup");
+             }
+    
+             function closepopup()
+             {
+                 popup.classList.remove("open-popup");
+             }
+
+
+            // var invalids =document.getElementById("b");
+
+            // if(invalids =null)
+            // {
+            //     function invalidpopup()
+            //  {
+            //     alert("Please provide all the details");
+            //  }
+            // }    
+
+
+            // document.addEventListener("mousemove", myFunction);
+
+            //     function myFunction() {
+            //     document.getElementById("demo").innerHTML = Math.random();
+  
+            //     }
+
+
+        </script>
+            
+     
+        </div>
+
+    </div>
+    </div>
+         <!--END OF  POP UP- HTML WITH SCRIPT -->
+         <p id="demo"></p>
+        
+<script>
+              
+</script>
+        
+
+
+ </body>
+ <footer>
+
+    <h3 class="copyright" >  &#169; copyright
+    <script>
+    var dates = new Date();
+    document.write(dates.getFullYear()); 
+    </script>  
+    </h3>
+
+</footer>
+ </html>    

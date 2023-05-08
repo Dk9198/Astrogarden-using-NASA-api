@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="project.css">
+        <script src="Script.js" ></script>
+        <script src="./node_modules/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+  
+    <div class="logo proj_div1">
+        <img src="logo.png" alt="">
+    </div>
+
+
+    
+
+    <div class="menu1" id="menu11"> 
+        <ul>
+        <li><a href="index.html"class ="btn 1" id="btn1"> <span class="underline"></span>Home</a></li>   
+        <li><a href="collection.html"class="btn 3" id="btn3">Collection</a></li>
+        <li><a href="login.html"   class="btn 2" id="btn2">Signup</a></li>
+        <li><a href="aboutme.html" class="btn 4" id="btn4" >About</a></li>
+        </ul>    
+    </div>
+
+    <div class="prj_txt" >
+        AstroGarden
+    </div>  
+
+    <div class="prj_wel">
+        Welcome to Astrogarden!! 
+    </div>
+    
+    <br>
+    
+    <div classname="apodnasa" >
+        <h1 id="apodtitle" >NASA's  Astronomy picture of the Day</h1>
+       <br>
+       <br> 
+        <button id="apod" onclick="sendapirequest()">Click here</button>
+        
+        <br>
+        <br>
+        <br>
+        <div id="date">
+        </div> 
+        <br>
+        <div id="imagecontent">     
+        </div>
+        <br>
+        <div id="explanation">
+        </div>  
+    </div>
+
+    
+    <br>
+
+    <div class="prj_cnt">
+        <h3 id="prj_cnt1" >What is AstroGarden ?</h3> 
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <p> This Astrogarden is a Dark cold place(virtualy),
+        where you see the beauty of lights in the stars,moons and the beauty of darkness in the empty spaces, <br>
+        Sometimes you may see yourself through the stars,moon,planets & empty space.</p>
+        <br>
+        <p>In this AstroGarden site we post regular update of various astronomical events and latest astronomical news, star tracking guide,
+        <br>
+        In this site we have the Collection of Astronomical pictures own also have the collections share by our followers. <br>
+        If you willing to share your collections login and upload your pictures in the form column.</p>
+    </div>
+  
+  </body>
+
+  <footer>
+
+    <h3 class="copyright" >  &#169; copyright
+    <script>
+    var dates = new Date();
+    document.write(dates.getFullYear()) 
+    </script>  
+    </h3>
+
+</footer>
+
+
+</html>
